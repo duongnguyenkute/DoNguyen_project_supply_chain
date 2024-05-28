@@ -18,7 +18,7 @@ cd API
 ```
 pip install -r requirements.txt
 ```
-2. 1: Thay đổi các thiết lập user, pasword trong file config.py
+2. 1: Thay đổi các thiết lập user, pasword trong file DoNguyen_project_supply_chain/API/config.py
 
 ```
 password = 'your password'
