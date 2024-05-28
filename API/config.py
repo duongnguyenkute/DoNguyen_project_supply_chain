@@ -1,3 +1,3 @@
-password = 'ilm01665585538'
+password = ''
 
-user = 'root'
+user = ''
