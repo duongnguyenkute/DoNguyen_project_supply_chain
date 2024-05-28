@@ -1,0 +1,9 @@
+.truckshipment-data-container{
+    position: fixed;
+    top: 120px;
+    left:120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}

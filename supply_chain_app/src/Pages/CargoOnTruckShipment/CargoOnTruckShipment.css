@@ -1,0 +1,24 @@
+
+
+.cargo-item-container{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    margin-left: 120px;
+    top: 120px;
+    flex-flow: wrap;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 85%;
+}
+
+.storeroom-input-type-location{
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 4px 8px;
+    padding : 4px 8px;
+    top: 80px;
+    right: 120px;
+}

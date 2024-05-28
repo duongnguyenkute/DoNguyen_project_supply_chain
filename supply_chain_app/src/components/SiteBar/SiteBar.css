@@ -1,0 +1,62 @@
+.sitebar-container{
+    position: fixed;
+    left: 0px;
+    /* top:10px; */
+    background: forestgreen;
+    width: 120px;
+}
+.appbar-container{
+    position: fixed;
+    top: 0px;
+    height: 120px;
+    background: forestgreen;
+    z-index: -1;
+}
+/* .icon-container:hover .retail-icon,.icon-container:hover .retail-text{
+    background-color: #ccc;
+    z-index: 1;
+    cursor: pointer;
+} */
+.retail-icon{
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    z-index: 1;
+}
+.retail-text{
+    font-size: larger;
+    font: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: oldlace;
+    /* padding: auto; */
+}
+.retail-icon:hover{
+    width: 90px;
+    height: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    background-color: #ccc;
+    z-index: 1;
+    /* color: oldlace; */
+    cursor: pointer;
+}
+.retail-text:hover{
+    width: 90px;
+    height: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    background-color: #423e44;
+    z-index: 1;
+    color: oldlace;
+    cursor: pointer;
+}
+.h-title-sitebar{
+    color: oldlace;
+    height: 100%;
+    line-height: 120px;
+    font-weight: bold;
+    font-size: 40px;
+}

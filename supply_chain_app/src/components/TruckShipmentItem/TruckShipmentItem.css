@@ -1,0 +1,100 @@
+.truckshipment-item-contain{
+  background: #4fb174;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 380px;
+  height: 280px;
+
+}
+.truckshipment-item-icon{
+  font-size: 64px;
+}
+.temperature-container{
+  display: inline;
+}
+.truckshipment-item-contain:hover{
+  background: #4fb174;
+  margin: 10px;
+  padding: 10px;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 380px;
+  height: 280px;
+
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+  
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 500px;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+  
+.display-block {
+    display: block;
+}
+  
+.display-none {
+  display: none;
+}
+.p-title{
+  font-weight: bold;
+  font-size: large;
+  color: palevioletred;
+}
+.truck-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.truck-icon-img{
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+.modal-content{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-truck-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+}
+.modal-row-trucks-item{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.modal-col-half{
+  width: 50%;
+}
+
+.modal-col-four{
+  width: 25%;
+}
+.modal-col-third{
+  width: 30%;
+}
+.p-bold{
+  font-weight: bold;
+}
+.modal-col-34{
+  width: 34%;
+}

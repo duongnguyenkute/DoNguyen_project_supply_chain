@@ -1,0 +1,60 @@
+{
+  "name": "supply_chain_app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@react-google-maps/api": "^2.1.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "clsx": "^2.1.0",
+    "customize-cra": "^1.0.0",
+    "d3-geo": "^3.1.1",
+    "d3-scale": "^4.0.2",
+    "d3-scale-chromatic": "^3.1.0",
+    "d3-selection": "^2.0.0",
+    "d3-zoom": "^3.0.0",
+    "framer-motion": "^4.1.17",
+    "google-maps-react": "^2.0.6",
+    "plotly.js": "^2.31.1",
+    "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.1.0",
+    "react-plotly.js": "^2.6.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "react-simple-maps": "^3.0.0",
+    "react-spinners": "^0.13.8",
+    "spinners-react": "^1.0.7",
+    "topojson-client": "^3.1.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

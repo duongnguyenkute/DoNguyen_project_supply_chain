@@ -1,0 +1,59 @@
+CREATE DATABASE  IF NOT EXISTS `digital_twin` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `digital_twin`;
+-- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
+--
+-- Host: localhost    Database: digital_twin
+-- ------------------------------------------------------
+-- Server version	8.0.37
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `bill`
+--
+
+DROP TABLE IF EXISTS `bill`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `bill` (
+  `BillID` varchar(45) NOT NULL,
+  `CreateAt` varchar(45) DEFAULT NULL,
+  `StoreRoomID` varchar(45) DEFAULT NULL,
+  `WarehouseID` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`BillID`),
+  KEY `StoreRoomID` (`StoreRoomID`),
+  KEY `WarehouseID` (`WarehouseID`),
+  CONSTRAINT `bill_ibfk_1` FOREIGN KEY (`StoreRoomID`) REFERENCES `storeroom` (`StoreRoomID`),
+  CONSTRAINT `bill_ibfk_2` FOREIGN KEY (`WarehouseID`) REFERENCES `warehouse` (`WarehouseID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bill`
+--
+
+LOCK TABLES `bill` WRITE;
+/*!40000 ALTER TABLE `bill` DISABLE KEYS */;
+INSERT INTO `bill` VALUES ('11d17442-3653-4b81-87fb-71acfd02a5a6','2024-05-17','f06d25fe-73b5-4397-9ba8-800c20e966c4','bb244a26-79e8-4530-813c-bc68f5d92af9'),('1454028e-fdf7-43a3-8159-c945fce66f6e','2024-05-16','f735a1c9-3bf2-4a10-a3ab-223f891c802b','bb244a26-79e8-4530-813c-bc68f5d92af9'),('17182168-d6db-4bd8-954e-96e5b2c58d58','2024-05-21','f06d25fe-73b5-4397-9ba8-800c20e966c4','4dbba466-bf5d-4759-b9bd-cd6ef8066f57'),('200569eb-44ad-43cf-89b7-5f92236a7651','2024-05-16','f06d25fe-73b5-4397-9ba8-800c20e966c4','4dbba466-bf5d-4759-b9bd-cd6ef8066f57'),('200df7d2-0bd7-4f31-873a-e041a0e03bae','2024-05-21','00407ab7-7ecc-4daf-9483-d99fd4bd758d','bb244a26-79e8-4530-813c-bc68f5d92af9'),('34726589-c01c-40d9-abc0-6c721cb8239f','2024-05-16','f735a1c9-3bf2-4a10-a3ab-223f891c802b','4dbba466-bf5d-4759-b9bd-cd6ef8066f57'),('377577f1-ced9-4666-bc72-cf60b7c44704','2024-05-22','00407ab7-7ecc-4daf-9483-d99fd4bd758d','bb244a26-79e8-4530-813c-bc68f5d92af9'),('53fa2940-63b5-4618-bd21-e17a383e3e92','2024-05-16','3ab13ca3-4586-49b7-b6b5-f1164eb84c10','8646cc1c-e7e3-4513-b5c2-fee8889aa5eb'),('5741bd86-305a-4160-a8d5-ccc1148983fa','2024-05-22','f06d25fe-73b5-4397-9ba8-800c20e966c4','bb244a26-79e8-4530-813c-bc68f5d92af9'),('6a3f2376-799e-4119-9a3a-e4f57d4a427c','2024-05-16','f06d25fe-73b5-4397-9ba8-800c20e966c4','8646cc1c-e7e3-4513-b5c2-fee8889aa5eb'),('6da89ee4-ebb7-4d59-b669-329a6d27944a','2024-05-21','00407ab7-7ecc-4daf-9483-d99fd4bd758d','4dbba466-bf5d-4759-b9bd-cd6ef8066f57'),('7264ca67-8b4e-4750-95b6-5cad3cb18772','2024-05-21','00407ab7-7ecc-4daf-9483-d99fd4bd758d','8646cc1c-e7e3-4513-b5c2-fee8889aa5eb'),('72e6b5f3-3ae4-4958-a0ed-563cac1d4b86','2024-05-21','f06d25fe-73b5-4397-9ba8-800c20e966c4','4dbba466-bf5d-4759-b9bd-cd6ef8066f57'),('7c75a46e-576b-43c3-b5c8-344e7c2df039','2024-05-21','00407ab7-7ecc-4daf-9483-d99fd4bd758d','8646cc1c-e7e3-4513-b5c2-fee8889aa5eb'),('8bebd99d-7b7d-4aba-8190-0427c534e060','2024-05-17','f06d25fe-73b5-4397-9ba8-800c20e966c4','8646cc1c-e7e3-4513-b5c2-fee8889aa5eb'),('91dbf681-3430-4fa6-acbe-a7b17774e55b','2024-05-17','f06d25fe-73b5-4397-9ba8-800c20e966c4','4dbba466-bf5d-4759-b9bd-cd6ef8066f57'),('a943765e-4961-4ed1-b939-1f44e13e167c','2024-05-21','00407ab7-7ecc-4daf-9483-d99fd4bd758d','4dbba466-bf5d-4759-b9bd-cd6ef8066f57'),('c2c17857-20cc-4c06-8909-43d1abf3c4cb','2024-05-16','f06d25fe-73b5-4397-9ba8-800c20e966c4','4dbba466-bf5d-4759-b9bd-cd6ef8066f57'),('ccd4fbdb-6c6c-4c60-8fd1-87c61fd2fd04','2024-05-16','f06d25fe-73b5-4397-9ba8-800c20e966c4','4dbba466-bf5d-4759-b9bd-cd6ef8066f57'),('d94cd3f2-567f-4e88-a065-d1a57e20e707','2024-05-16','f06d25fe-73b5-4397-9ba8-800c20e966c4','bb244a26-79e8-4530-813c-bc68f5d92af9'),('e67647a4-ee92-49e1-8929-33a8a52c5782','2024-05-16','f735a1c9-3bf2-4a10-a3ab-223f891c802b','8646cc1c-e7e3-4513-b5c2-fee8889aa5eb'),('f35afdec-5d60-4e30-8701-a0a2ea92911d','2024-05-16','00407ab7-7ecc-4daf-9483-d99fd4bd758d','8646cc1c-e7e3-4513-b5c2-fee8889aa5eb');
+/*!40000 ALTER TABLE `bill` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-05-28  8:57:58

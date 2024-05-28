@@ -1,0 +1,25 @@
+.warehouse-item-contain{
+    background: #4fb174;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 240px;
+}
+.warehouse-item-icon{
+    font-size: 64px;
+}
+.temperature-container{
+    display: inline;
+}
+.warehouse-item-contain:hover{
+    background: #4fb174;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 300px;
+    height: 240px;
+
+}

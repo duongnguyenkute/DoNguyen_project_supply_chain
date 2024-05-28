@@ -1,0 +1,134 @@
+.cargo-item-contain{
+    background: #c2deec;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    /* flex-flow: wrap; */
+}
+.cargo-item-contain:hover{
+    background: #c2deec;
+    opacity: 0.6;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+
+.cargo-item-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+    
+/* .cargo-item-modal-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:fixed;
+    background: white;
+    width: 40%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+} */
+
+.cargo-item-modal-main {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:fixed;
+    background: white;
+    width: 400px;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.display-block {
+    display: block;
+}
+.input-part {
+    display: block;
+    margin: 8px;
+    padding: 8px;
+}
+    
+  .display-none {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.cargo-item-button{
+    margin: 2px;
+}
+.cargo-item-button:hover{
+    margin: 2px;
+    cursor: pointer;
+}
+.cargo-item-button-disabled{
+    margin:2px;
+    /* cursor: pointer; */
+    cursor: not-allowed;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none    ;
+    /* opacity: 0.7; */
+}
+.cargo-item-modal-content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.cargo-item-modal-row{
+    display: flex;
+    width: 100%;
+}
+.cargo-item-modal-col-half{
+    width: 50%;
+}
+
+.cargo-item-modal-col-four{
+    width: 25%;
+}
+.cargo-item-modal-col-third{
+    width: 30%;
+}
+.cargo-item-p-bold-ware{
+    font-weight: 700;
+}
+.cargo-item-p-title-info{
+    font-weight: bold;
+    color: indianred;
+
+}
+.cargo-item-img-icon{
+    width: 16px;
+    height: 16px;
+}
+.p-text{
+    padding-left: 16px;
+    text-align: left;
+}
+
+.cargo-item-modal-col-custom1{
+    width: 39%;
+}
