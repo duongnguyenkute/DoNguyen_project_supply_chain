@@ -10,12 +10,12 @@ function ResultPlaceOrderFWhouse(){
     const location = useLocation();
     const listData = location.state
     console.log("List Data", listData)
-    const [isMounted, setIsMouted] = useState(false)
+    // const [isMounted, setIsMouted] = useState(false)
     const [listResultOrder, setListResultOrder] = useState([])
 
     const [resultItems, setResultItems] = useState([]);
     let tempListResultOrder = []
-    let a
+    // let a
 
     async function fetchData(item) {
         const { GoodsID, Count, StoreroomID, GoodsName, Quantity } = item;
@@ -80,8 +80,6 @@ function ResultPlaceOrderFWhouse(){
                         return response.json();
                     })
                     .then(data => {
-                        // setListStoreRoom(data);
-                        // setIsMouted(true);
                         console.log("fetch Susscessfull")
                         console.log(data);
                         // console.log(dictData['$dtId'])

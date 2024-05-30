@@ -5,6 +5,7 @@ import PriceIcon from "./price_img.png"
 import OnStockIcon from "./stock_img.png"
 import { LuDollarSign } from "react-icons/lu"
 import FastDelivery from "./fast-delivery.png"
+import WarningIcon from "./icons8-warning-96.png"
 function OrderItemFromWarehouse({data}){
 
     const dictData = {...data}
@@ -15,7 +16,6 @@ function OrderItemFromWarehouse({data}){
         "Shoes": <img width="64" height="64" src="https://img.icons8.com/color/48/pair-of-sneakers.png" alt="pair-of-sneakers"/>,
         "T-Shirt" : <img width="64" height="64" src="https://img.icons8.com/dusk/64/t-shirt.png" alt="t-shirt"/>,
         "Dress": <img width="64" height="64" src="https://img.icons8.com/color/48/wedding-dress.png" alt="wedding-dress"/>
-
     }
 
     console.log("dictData: ", dictData)
@@ -74,6 +74,7 @@ function OrderItemFromWarehouse({data}){
                 <div>   
                 <img src={OrderQuantityIcon} alt="Order Quantity" style={{width: "16px", height: "16px"}}/>
                 <p>Order Quantity: 0/{dictData["Quantity"]}</p>
+                <img src = {WarningIcon} alt="Order Quantity" style={{width: "16px", height: "16px"}}/>
                 </div>
             </div>
         </div>
@@ -92,9 +93,22 @@ function OrderItemFromWarehouse({data}){
                     <p style={{display: "inline-block", paddingLeft: "4px"}}>On Stock: {dictData["Quantity"]}</p>
                 </div>
 
-                <div style={{display: "block"}}>
+                <div style={{    display: "flex", alignItems: "center", justifyContent: "center",}}>
                     <img src={OrderQuantityIcon} alt="Order Quantity" style={{width: "16px", height: "16px"}}/>
                     <p style={{display: "inline-block", paddingLeft: "4px"}}>Order Quantity:  {dictData["Count"] - dictData['data']['remaining']}/{dictData["Count"]}</p>
+                    {dictData["Count"] - dictData['data']['remaining']  < dictData["Count"] &&
+                    <img src = {WarningIcon} alt="Order Quantity" style={{width: "24px", height: "24px"}}/>
+                    }
+                </div>
+                <div>
+                    {dictData["Count"] - dictData['data']['remaining']  < dictData["Count"] &&
+                    <p style={{
+                        color: "#000",
+                        padding: "0px",
+                        borderRadius: "17px",
+                        background: "#f44336",
+                    }}>Not enough quantity</p>
+                    }
                 </div>
             </div>
             
